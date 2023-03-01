@@ -3,7 +3,6 @@
 	"SQL_DB_ACCP_MITOZ": "[WS19-MITOZ].[GEBATBELACCP2021]",
 	"SQL_DB_PROD_API": "[API]",
 	"SQL_DB_PROD_MITOZ": "[WS19-MITOZ].[GEBATBEL2021]",
-	"SMTP_HOST": "gebatrans-com.mail.protection.outlook.com",
 	"TRANSPORT_ID_URI_ACCP": "http://ws19-mitoz.gebatrans.local/Mitoz/Eval/ServiceWebAPIOrderImport.dll/datasnap/rest/TServerMethods1/Addfile",
 	"TRANSPORT_ID_URI_PROD": "http://ws19-mitoz.gebatrans.local/Mitoz/Prod/ServiceWebAPIOrderImport.dll/datasnap/rest/TServerMethods1/Addfile"
 }
