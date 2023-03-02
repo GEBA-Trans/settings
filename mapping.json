@@ -1,4 +1,5 @@
 {
+	"NOTIFICATION_EMAIL" : "alerts@gebatrans.com",
 	"SQL_DB_ACCP_API": "[ACCP_API]",
 	"SQL_DB_ACCP_MITOZ": "[WS19-MITOZ].[GEBATBELACCP2021]",
 	"SQL_DB_PROD_API": "[API]",
