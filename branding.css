@@ -14,7 +14,7 @@
     --secondary: var(--gebalightblue);
     --success: #198754;
     --info: var(--gebahighlight);
-    --warning: ;
+    --warning: var(--gebawarning);
     --danger: #b0140b;
     --light: #f8f9fa;
     --dark: #343a40;
