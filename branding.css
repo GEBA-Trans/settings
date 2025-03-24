@@ -40,6 +40,9 @@
 .bg-warning {
     background-color: var(--warning) !important;
 }
+.bg-primary {
+    background-color: var(--primary) !important;
+}
 
 
 .btn-primary {
