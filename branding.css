@@ -3,20 +3,24 @@
     --gebablue: #10195B; /* GEBA Blauw Brand Book 2025 */
     --gebalightblue: #0553DD; /* Accent Blauw Brand Book 2025 */
     --gebayellow: #F7B82D; /* GEBA Geel Brand Book 2025 */
-    --gebalightyellow: #fff4e6;  /* Accent Geel Brand Book 2025 */
+    /* --gebalightyellow: #fff4e6;  Accent Geel Brand Book 2025 */
     --gebahighlight: #eef5ff; /* GEBA Grijs Brand Book 2025 */
+
     --gebaactiongreen: #45af00; /* Actie Groen (do not use) Brand Book 2025 */
-    --gebawarning: #FFEBEE;
-    
+    --gebawarning: #f7b82d;
+    --gebasuccess: #54b44e;
+    --gebainfo: #f2ef02;
+    --gebadanger: #e32400;
+
     
     /* Set colors from theme */
     --primary: var(--gebablue);
     --secondary: var(--gebalightblue);
-    --success: #198754;
-    --info: var(--gebahighlight);
+    --success: #var(--gebasuccess);
+    --info: var(--gebainfo);
     --warning: var(--gebawarning);
-    --danger: #b0140b;
-    --light: #f8f9fa;
+    --danger: var(--gebadanger);
+    --light: var(--gebahighlight);
     --dark: #343a40;
 
 
