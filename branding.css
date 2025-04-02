@@ -7,7 +7,8 @@
     --gebahighlight: #eef5ff; /* GEBA Grijs Brand Book 2025 */
 
     --gebaactiongreen: #45af00; /* Actie Groen (do not use) Brand Book 2025 */
-    --gebawarning: #f7b82d;
+    /* --gebawarning: #f7b82d; */
+    --gebawarning: #fcdfd3;
     --gebasuccess: #54b44e;
     --gebainfo: #f2ef02;
     --gebadanger: #e32400;
