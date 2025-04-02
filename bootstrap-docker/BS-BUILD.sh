@@ -28,8 +28,8 @@ rm -Rf ./dist
 mkdir -p ./dist/css ./dist/js
 
 # Export Files to Host
-docker cp bsdev:/home/bootstrap/bootstrap/dist/css ./dist/css || echo "CSS directory not found in container."
-docker cp bsdev:/home/bootstrap/bootstrap/dist/js ./dist/js || echo "JS directory not found in container."
+docker cp bsdev:/home/bootstrap/bootstrap/dist/css ./dist/ || echo "CSS directory not found in container."
+docker cp bsdev:/home/bootstrap/bootstrap/dist/js ./dist/ || echo "JS directory not found in container."
 
 # Zip the output if directories exist
 if [ -d "./dist/css" ] && [ -d "./dist/js" ]; then
