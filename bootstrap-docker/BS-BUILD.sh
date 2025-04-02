@@ -23,16 +23,24 @@ docker cp ./package.json bsdev:/home/bootstrap/bootstrap/package.json
 docker exec -ti -w /home/bootstrap/bootstrap bsdev bash -c "git checkout tags/v5.0.2"
 docker exec -ti -w /home/bootstrap/bootstrap bsdev bash -c "npm run dist"
 
-# Export Files to Host
+# Ensure output directories exist
 rm -Rf ./dist
-mkdir ./dist
-docker cp bsdev:/home/bootstrap/bootstrap/dist/css ./dist/css
-docker cp bsdev:/home/bootstrap/bootstrap/dist/js ./dist/js
-cd dist
-DATESTAMP=`date "+%Y-%m-%d.%H:%M:%S"`
-zip -r dist-$DATESTAMP.zip css js
-mv dist-$DATESTAMP.zip ..
-cd ..
+mkdir -p ./dist/css ./dist/js
+
+# Export Files to Host
+docker cp bsdev:/home/bootstrap/bootstrap/dist/css ./dist/css || echo "CSS directory not found in container."
+docker cp bsdev:/home/bootstrap/bootstrap/dist/js ./dist/js || echo "JS directory not found in container."
+
+# Zip the output if directories exist
+if [ -d "./dist/css" ] && [ -d "./dist/js" ]; then
+  cd dist
+  DATESTAMP=`date "+%Y-%m-%d.%H:%M:%S"`
+  zip -r dist-$DATESTAMP.zip css js
+  mv dist-$DATESTAMP.zip ..
+  cd ..
+else
+  echo "CSS or JS directory missing. Skipping zip creation."
+fi
 
 # Delete container
 docker rm -f bsdev
