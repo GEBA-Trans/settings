@@ -1,26 +1,31 @@
 :root {
     /* theme colors */
-    --gebablue: #10195B; /* GEBA Blauw Brand Book 2025 */
-    --gebalightblue: #0553DD; /* Accent Blauw Brand Book 2025 */
-    --gebayellow: #F7B82D; /* GEBA Geel Brand Book 2025 */
+    --gebablue: #10195B;
+    /* GEBA Blauw Brand Book 2025 */
+    --gebalightblue: #0553DD;
+    /* Accent Blauw Brand Book 2025 */
+    --gebayellow: #F7B82D;
+    /* GEBA Geel Brand Book 2025 */
     /* --gebalightyellow: #fff4e6;  Accent Geel Brand Book 2025 */
-    --gebahighlight: #eef5ff; /* GEBA Grijs Brand Book 2025 */
-
-    --gebaactiongreen: #45af00; /* Actie Groen (do not use) Brand Book 2025 */
-    /* --gebawarning: #f7b82d; */
+    --gebahighlight: #eef5ff;
+    /* GEBA Grijs Brand Book 2025 */
+    --gebaactiongreen: #45af00;
+    /* Actie Groen (do not use) Brand Book 2025 */
     --gebawarning: #FFEBEE;
     --gebasuccess: #54b44e;
     --gebainfo: #f2ef02;
     --gebadanger: #e32400;
 
-    
-    /* --primary: var(--gebablue);
+
+    /* Set color variables to use in apps  */
+    --primary: var(--gebablue);
     --secondary: var(--gebalightblue);
     --success: #var(--gebasuccess);
     --info: var(--gebainfo);
     --warning: var(--gebawarning);
     --danger: var(--gebadanger);
     --light: var(--gebahighlight);
-    --dark: #343a40; */
+    --dark: #343a40;
+
 
 }
