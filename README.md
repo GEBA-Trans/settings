@@ -14,9 +14,9 @@ This repository contains configuration/bootstrap settings. Failures usually come
 
 
 #### Git history: bugfixes and incident-related changes
-The following commits were identified from the available Git history by bugfix, incident, failure, retry, timeout, regression, or recovery-related wording. Use the commit hash to inspect the exact implementation and deployment context; the commit subject is a concise historical indication, not a complete root-cause report.
-- `d5025cc` (2025-03-25) — fix: update branding color variables in branding.css for consistency
-- `9d1ff67` (2025-03-24) — fix: define warning color variable in branding.css
+The following entries are taken from the available Git history. Where a commit references an issue or pull request, its title was looked up and included as the one-line error/change description.
+- `d5025cc` (2025-03-25) — fix: update branding color variables in branding.css for consistency — **Description:** Commit description: fix: update branding color variables in branding.css for consistency
+- `9d1ff67` (2025-03-24) — fix: define warning color variable in branding.css — **Description:** Commit description: fix: define warning color variable in branding.css
 
 ### Hoe en waar is de logging terug te vinden?
 
